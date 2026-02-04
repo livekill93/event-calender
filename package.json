@@ -1,0 +1,31 @@
+{
+  "name": "game-event-calendar",
+  "version": "1.0.0",
+  "description": "Game Event Calendar - YouTube RSS/HTML Crawling Based Event Extraction",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install -w backend && npm install -w frontend",
+    "dev": "npm run dev -w backend & npm run dev -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "start": "npm start -w backend",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w frontend"
+  },
+  "keywords": [
+    "game",
+    "event",
+    "calendar",
+    "youtube",
+    "rss",
+    "crawling"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
